@@ -9,3 +9,4 @@ C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Shared\
 C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Shared\obj\Debug\net8.0\refint\PaymentContext.Shared.dll
 C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Shared\obj\Debug\net8.0\PaymentContext.Shared.pdb
 C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Shared\obj\Debug\net8.0\ref\PaymentContext.Shared.dll
+C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Shared\obj\Debug\net8.0\PaymentContext.Shared.sourcelink.json

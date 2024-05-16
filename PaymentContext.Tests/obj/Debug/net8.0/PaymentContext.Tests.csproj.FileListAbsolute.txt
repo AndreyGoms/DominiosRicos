@@ -114,3 +114,4 @@ C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Tests\b
 C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Tests\bin\Debug\net8.0\PaymentContext.Shared.dll
 C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Tests\bin\Debug\net8.0\PaymentContext.Shared.pdb
 C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Tests\bin\Debug\net8.0\PaymentContext.Domain.pdb
+C:\Users\Andrey Gomes\Desktop\Estudos .NET\PaymentContext\PaymentContext.Tests\obj\Debug\net8.0\PaymentContext.Tests.sourcelink.json
