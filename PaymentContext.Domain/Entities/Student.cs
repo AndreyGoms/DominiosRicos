@@ -12,6 +12,8 @@ namespace PaymentContext.Domain.Entities
             Document = document;
             Email = email;                
             _subscriptions = new List<Subscription>();
+
+            AddNotifications(name, document, email);            
         }
 
         
@@ -22,6 +24,8 @@ namespace PaymentContext.Domain.Entities
         public IReadOnlyCollection<Subscription> Subscriptions{ get {return _subscriptions.ToArray();} }
 
         public void AddSubscription(Subscription subscription) {
+
+
 
             foreach (var sub in  Subscriptions)
                 sub.Inactivate();      
