@@ -1,10 +1,37 @@
-PaymentContext.Domain/bin/
-PaymentContext.Domain/obj/
-PaymentContext.Shared/bin/
-PaymentContext.Shared/obj/
-PaymentContext.Tests/bin/
-PaymentContext.Tests/obj/
+# Ignore bin and obj directories in all subdirectories
+**/bin/
+**/obj/
 
+# Ignore build results
+[Bb]uild/
+[Bb]uild[Ll]ogs/
 
+# Ignore NuGet packages
+*.nupkg
+# Ignore NuGet symbol packages
+*.snupkg
 
+# Ignore Rider project files
+.idea/
 
+# Ignore VS Code directories
+.vscode/
+
+# Ignore other temporary and log files
+*.log
+*.tmp
+*.temp
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.rsuser
+*.sln.docstates
+
+# Ignore auto-generated files
+mono_crash.*
