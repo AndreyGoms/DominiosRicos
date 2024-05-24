@@ -1,5 +1,6 @@
 using Flunt.Validations;
 using PaymentContext.Shared.Entities;
+using System.Linq;
 
 namespace PaymentContext.Domain.Entities
 {
@@ -12,14 +13,14 @@ namespace PaymentContext.Domain.Entities
             LastUpdateDate = DateTime.Now;
             ExpirationDate = expirationDate;
             Active = true;
-            Payments = new List<Payment>();
+            _payments = new List<Payment>();
         }
 
         public DateTime CreateDate { get; private set; }
         public DateTime LastUpdateDate { get; private set;}
         public DateTime? ExpirationDate { get; private set;}
         public bool Active { get; private set; }
-        public List<Payment> Payments { get; private set; }
+        public IReadOnlyCollection<Payment> Payments { get {return _payments.ToArray(); }}
 
         public void AddPayment (Payment payment) {
                 AddNotifications(new Contract()
