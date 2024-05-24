@@ -1,7 +1,11 @@
+
+using Flunt.Notifications;
 using PaymentContext.Domain.Enums;
+using PaymentContext.Shared.Commands;
 
 namespace PaymentContext.Domain.Commands {
-    public class CreatePayPalSubscriptionCommnad {
+    public class CreatePayPalSubscriptionCommnad : Notifiable, ICommand 
+    {
         
         //Name
         public string FirstName { get; set; }
@@ -35,5 +39,9 @@ namespace PaymentContext.Domain.Commands {
         public string  Country { get; set; }
         public string  ZipCode { get; set; }
         public string PayerEmail { get; set; }
+
+        public event EventHandler? CanExecuteChanged;
+
+
     }
 }
