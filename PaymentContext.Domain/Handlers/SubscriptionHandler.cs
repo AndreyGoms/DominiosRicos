@@ -40,7 +40,7 @@ public class SubscriptionHandler :
             AddNotification("Document","Este CPF já está em uso");
 
         //Verficar se o e-mail já esta cadastrado
-        if(_repository.DocumentExists(command.Document))
+        if(_repository.DocumentExists(command.Email))
             AddNotification("Email","Este Email já está em uso");
 
 
@@ -72,6 +72,10 @@ public class SubscriptionHandler :
 
         //Agrupar as Validacoes
         AddNotifications(name, document, email, address, email,student,subscription,payment);
+
+        //Checar as validacoes
+        if(Invalid)
+            return new CommandResult(false, "Não foi possível realizar sua assinatura");
 
         //Salvar as informacoes
         _repository.CreateSubscription(student);

@@ -21,8 +21,8 @@ namespace PaymentContext.Domain.Commands {
 
     
         //BoletoPayment
-        public string BarCode { get; private set; }                
-        public string BoletoNumber { get; private set; }
+        public string BarCode { get; set; }                
+        public string BoletoNumber { get; set; }
     
         
         //Payment
